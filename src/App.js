@@ -1,5 +1,5 @@
 import "./App.css";
-import { Home, Navbar, Products, Services, SignUp } from "./components";
+import { Footer, Home, Navbar, Products, Services, SignUp } from "./components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
           <Route path="/service" exact element={<Services />} />
           <Route path="/signup" exact element={<SignUp />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
